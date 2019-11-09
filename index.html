@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This site is a work in progress, bare with me">
+  <title>Hi, I'm Garry | Web Design & Development Belfast</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/10f85d3fc0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    let d = new Date();
+    let y = d.getFullYear();
+  </script>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="social-container">
+      <a href="#" target="_blank" rel="noopener"><i class="fab fa-lg fa-twitter"></i></a>
+      <a href="#" target="_blank" rel="noopener"><i class="fab fa-lg fa-github"></i></a>
+      <a href="#" target="_blank" rel="noopener"><i class="fab fa-lg fa-dribbble"></i></a>
+    </div>
+    <nav class="page-nav">
+      <div class="nav-item"></div>
+      <div class="nav-item"><a href="#work">WORK</a></div>
+      <div class="nav-item"><a href="#contact">CONTACT</a></div>
+    </nav>
+  </div>
+  <div class="scroll-down-container" id="scroll">
+    <div class="scroll-down-inner">
+      <i class="fas fa-angle-down"></i>
+    </div>
+  </div>
+  <main>
+    <section class="section intro-section id="top">
+      <div class="container">
+        <div class="header-inner">
+          <h1>Hi, I'm <span class="purple">Garry</span></h1>
+          <h2>I <span class="purple">design</span> & <span class="purple">develop</span> awesome <span
+              class="purple">digital experiences</span>.</h2>
+          <h3>I'm currently making cool stuff for <a href="http://ixdbelfast.org/" target="_blank"
+              rel="noopener">#ixdbelfast</a> but I'm down to work on select projects.</h3>
+        </div>
+      </div>
+    </section>
+    <section class="section work-section" id="work">
+      <div class="container">
+        <h2>A selection of my <span class="purple">work</span></h2>
+      </div>
+      <div class="portfolio-item-wrapper">
+        <div class="portfolio-item">
+          <div class="portfolio-item-inner-wrapper one">
+            <h3 class="portfolio-item_overlay-title">Portfolio Item One</h3>
+            <div class="portfolio-item_overlay"></div>
+            <p class="readmore-btn">Learn More <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-item-inner-wrapper two">
+            <h3 class="portfolio-item_overlay-title">Portfolio Item Two</h3>
+            <div class="portfolio-item_overlay"></div>
+            <p class="readmore-btn">Learn More <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-item-inner-wrapper three">
+            <h3 class="portfolio-item_overlay-title">Portfolio Item Three</h3>
+            <div class="portfolio-item_overlay"></div>
+            <p class="readmore-btn">Learn More <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-item-inner-wrapper four">
+            <h3 class="portfolio-item_overlay-title">Portfolio Item Four</h3>
+            <div class="portfolio-item_overlay"></div>
+            <p class="readmore-btn">Learn More <i class="fas fa-chevron-right"></i></p>
+          </div>
+        </div>
+    </section>
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2>Let's <span class="purple">work together</span>.</h2>
+        <h4><a href="mailto:hello@garryirwin.co">hello@garryirwin.co</a></h4>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="small">Built with <span class="purple">♥</span> and coffee in Belfast - &copy; 
+      <script>
+        document.write(y);
+      </script>
+        <p class="right-align small"><a href="#top">Back to top <span class="purple"><i class="fas fa-fw fa-chevron-up"></i></span></a></p>
+    </div>
+  </footer>
+  <script>
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() == 0) {
+          $('#scroll').show();
+        } else {
+          $('#scroll').fadeOut(300);;
+        }
+      });
+    })
+  </script>
+</body>
+</html>
